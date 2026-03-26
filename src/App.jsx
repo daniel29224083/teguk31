@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
@@ -89,6 +90,7 @@ function App() {
       </div>
       <Footer />
       <FloatingWhatsApp />
+      <Analytics />
     </div>
   )
 }
